@@ -196,7 +196,7 @@ Following is the complete sample code in both C\# and Visual Basic.
     public static void WDDeleteHiddenText(string docName)
     {
         // Given a document name, delete all the hidden text.
-        const string wordmlNamespace = "https://schemas.openxmlformats.org/wordprocessingml/2006/main";
+        const string wordmlNamespace = "http://schemas.openxmlformats.org/wordprocessingml/2006/main";
 
         using (WordprocessingDocument wdDoc = WordprocessingDocument.Open(docName, true))
         {
@@ -230,7 +230,7 @@ Following is the complete sample code in both C\# and Visual Basic.
 ```vb
     Public Sub WDDeleteHiddenText(ByVal docName As String)
         ' Given a document name, delete all the hidden text.
-        Const wordmlNamespace As String = "https://schemas.openxmlformats.org/wordprocessingml/2006/main"
+        Const wordmlNamespace As String = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 
         Using wdDoc As WordprocessingDocument = WordprocessingDocument.Open(docName, True)
             ' Manage namespaces to perform XPath queries.
